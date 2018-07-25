@@ -1,0 +1,39 @@
+
+body{
+    background-color: #2a2927;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+a{
+    color: #F5F0F0;
+    font-size: 70px;
+    text-decoration: none;
+    letter-spacing:-1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+a::after,
+a::before{
+content: "";
+padding: 0.5em 0.5em;
+border: 12px solid #4169e1;
+top: 50%;
+left: 50%;
+width: 100%;
+position: absolute;
+display: block;
+transform: translateX(-50%) translateY(-50px);
+z-index:-2;
+animation: 5s infinite alternate  ease-in-out thisis;
+}
+@keyframes thisis {
+    0{
+       transform:translateX(-50%) 
+       translateY(-50%) rotate(0deg); 
+    }
+    100%{
+        transform:translateX(-50%) 
+        translateY(-50%) rotate(90deg);
+    }
+}
